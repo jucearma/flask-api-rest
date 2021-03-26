@@ -1,0 +1,150 @@
+_type: export
+__export_format: 4
+__export_date: 2021-03-05T21:20:22.071Z
+__export_source: insomnia.desktop.app:v2021.1.0
+resources:
+  - _id: req_a3b592d41b444a459c2bd54ab2bdc8ac
+    parentId: wrk_b123beaa0cb243aa9105f6d1ab83ed92
+    modified: 1614977987677
+    created: 1614977954587
+    url: http://127.0.0.1:5000/products
+    name: Get_Products
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1614977954587
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_b123beaa0cb243aa9105f6d1ab83ed92
+    parentId: null
+    modified: 1614977934050
+    created: 1614977934050
+    name: Flask_Restfull
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_8a3b6d4fd53640b1a18de2312e0ac94a
+    parentId: wrk_b123beaa0cb243aa9105f6d1ab83ed92
+    modified: 1614978546611
+    created: 1614978038611
+    url: http://127.0.0.1:5000/products
+    name: Add_Product
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title": "HP Laptop",
+        	"productDescription": "HP laptop 15In",
+        	"productBrand": "HP",
+        	"price": "25000"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_169594567edf469c977821c429484964
+    authentication: {}
+    metaSortKey: -1614978038611
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2033ebf1ae3b4a8a897237a29efa7591
+    parentId: wrk_b123beaa0cb243aa9105f6d1ab83ed92
+    modified: 1614978559972
+    created: 1614978348587
+    url: http://127.0.0.1:5000/products/2
+    name: Update_Products
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"productDescription": "Lenovo laptop 15In update"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_cf31693643b44620b36b1a2b901f1986
+    authentication: {}
+    metaSortKey: -1614978348587
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ed8a97e6a4aa4b8db7ad986ff1be651b
+    parentId: wrk_b123beaa0cb243aa9105f6d1ab83ed92
+    modified: 1614979104854
+    created: 1614979025261
+    url: http://127.0.0.1:5000/products/1
+    name: Delete_Product
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_8ca23b6b2d5d450887ac16bbc815ea62
+    authentication: {}
+    metaSortKey: -1614979025261
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_8a3ca9e185ef5b0a53c5115912db77e8728f185c
+    parentId: wrk_b123beaa0cb243aa9105f6d1ab83ed92
+    modified: 1614977934145
+    created: 1614977934145
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1614977934145
+    _type: environment
+  - _id: jar_8a3ca9e185ef5b0a53c5115912db77e8728f185c
+    parentId: wrk_b123beaa0cb243aa9105f6d1ab83ed92
+    modified: 1614977934151
+    created: 1614977934151
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_b566f3a37e144de3913c65c640d9c102
+    parentId: wrk_b123beaa0cb243aa9105f6d1ab83ed92
+    modified: 1614977934052
+    created: 1614977934052
+    fileName: Flask_Restfull
+    contents: ""
+    contentType: yaml
+    _type: api_spec
